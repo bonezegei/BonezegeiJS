@@ -1,0 +1,21 @@
+{
+  "name": "@jofelbatutay/bonezegeijs",
+  "version": "1.0.0",
+  "description": "A lightweight reactive UI framework",
+  "main": "src/Bonezegei.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonezegei/BonezegeiJS.git"
+  },
+  "keywords": ["bonezegei", "framework", "reactive", "ui", "jofel batutay", "bonezegeiJS"],
+  "author": "Jofel Batutay (Bonezegei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bonezegei/BonezegeiJS/issues"
+  },
+  "homepage": "https://github.com/bonezegei/BonezegeiJS#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
