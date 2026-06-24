@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bonezegei-model (b-model) Example</title>
+</head>
+<body>
+  <div id="app">
+    <p>Your name: {{ username }}</p>
+    <input type="text" b-model="username" placeholder="Type your name">
+  </div>
+  <script type="module">
+    import { App } from './index.js';
+    App();
+  </script>
+</body>
+</html>
