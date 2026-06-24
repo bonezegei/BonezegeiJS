@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BonezegeiJS Example</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <button b-on="click: toggle">Toggle</button>
+    <p b-show="visible">This content is visible when `visible` is true.</p>
+    <ul>
+      <li b-for="item in items">{{ item }}</li>
+    </ul>
+    <input type="text" b-model="message" />
+    <p>Message: {{ message }}</p>
+  </div>
+
+  <script type="module">
+    import Bonezegei from '../../src/Bonezegei.js';
+
+    const app = Bonezegei.createApp({
+      el: '#app',
+      data: {
+        title: 'BonezegeiJS Demo',
+        visible: true,
+        items: ['apple', 'banana', 'cherry'],
+        message: 'Hello'
+      },
+      methods: {
+        toggle(data) {
+          data.visible = !data.visible;
+        }
+      }
+    });
+
+    // Use `app.state` to read or update reactive state.
+    setTimeout(() => {
+      app.state.message = 'Updated from code';
+    }, 2000);
+  </script>
+</body>
+</html>
