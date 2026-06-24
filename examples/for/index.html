@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Bonezegei-for (b-for) Example</title></head>
+<body>
+  <div id="app">
+    <h3>Shopping List</h3>
+    <ul>
+      <li b-for="item in items">
+        {{ $index  }}. {{ item }}
+      </li>
+    </ul>
+
+    <input b-model="newItem" placeholder="Add item">
+    <button b-on="click:add()">Add</button>
+  </div>
+<script type="module"  src='index.js'></script>
+</body>
+</html>
