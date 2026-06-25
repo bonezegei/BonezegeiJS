@@ -1,7 +1,7 @@
 {
   "name": "@bonezegei/bonezegeijs",
-  "version": "1.0.1",
-  "description": "A lightweight reactive UI framework",
+  "version": "1.0.2",
+  "description": "A lightweight reactive UI framework, with storage and websocket support, for building modern web applications.",
   "main": "src/Bonezegei.js",
   "type": "module",
   "repository": {

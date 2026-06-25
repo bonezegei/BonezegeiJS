@@ -12,6 +12,9 @@ It provides:
 - automated DOM updates when the underlying state changes
 - a small client-side routing utility via `createRouter()`
 
+## Utilities (wrappers)
+    BonezegeiConnect  (websocket & http)
+    BonezegeiStorage  (storage)
 ## Usage
 
 ```html
@@ -32,7 +35,7 @@ It provides:
     </body>
   
     <script type="module">
-    import Bonezegei from '../../src/Bonezegei.js';
+    import Bonezegei from 'https://cdn.jsdelivr.net/npm/@bonezegei/bonezegeijs@1.0.2/src/Bonezegei.js';
     const bz = new Bonezegei();
     const render = bz.createRenderer();
 
